@@ -1,1 +1,1 @@
-# IslamicFinAI-BERT
+# FinAI-BERT-IslamicBanks
