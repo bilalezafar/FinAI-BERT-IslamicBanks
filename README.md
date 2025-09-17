@@ -18,7 +18,7 @@ This model is designed to support:
 - **Index construction** for benchmarking AI-readiness in Islamic banking  
 - **Supervised learning baselines** for domain-specific sentence classification tasks  
 
-## 🧠 Model Architecture
+## Model Architecture
 - **Base Model**: [`bert-base-uncased`](https://huggingface.co/bert-base-uncased)  
 - **Fine-tuned Task**: Binary sentence-level classification (`AI` vs. `Non-AI`)  
 - **Tokenizer**: WordPiece tokenizer (standard BERT)  
@@ -36,8 +36,6 @@ This model is designed to support:
 
 The model demonstrates **strong generalization**, **high semantic sensitivity**, and **excellent calibration** across diverse bank report formats.
 
----
-
 ## Training Data
 - **Total examples**: 2,632 sentence-level instances  
   - 1,316 AI-related (seed word filtered + manually verified)  
@@ -45,8 +43,6 @@ The model demonstrates **strong generalization**, **high semantic sensitivity**,
 - **Source documents**: Annual reports from 106 Islamic banks (2015–2024)
 
 Training corpus was extracted using domain-specific lexicons and manually annotated for relevance using a guided coding protocol.
-
----
 
 ## Training Setup
 
@@ -69,6 +65,7 @@ Training corpus was extracted using domain-specific lexicons and manually annota
 | `ai_seedwords.csv` | Seed word list used for initial AI-related sentence extraction |
 | `bert_training_data.csv` | Final sentence-level training dataset (manually verified) |
 
+---
 
 ## Model Inference
 
@@ -92,3 +89,5 @@ label = label_map.get(result['label'], result['label'])
 score = result['score']
 
 print(f"Classification: {label} | Score: {score:.4f}")
+```
+---
