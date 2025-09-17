@@ -25,7 +25,7 @@ This model is designed to support:
 - **Precision**: Mixed-precision (FP16)  
 - **Framework**: Hugging Face Transformers (`Trainer API`)
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 | Metric         | Score      |
 |----------------|------------|
