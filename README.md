@@ -91,3 +91,23 @@ score = result['score']
 print(f"Classification: {label} | Score: {score:.4f}")
 ```
 ---
+
+## Citation
+
+If you use this model, dataset, or code, please cite:
+
+```bibtex
+@article{zafar2026finai,
+  title   = {A domain specific BERT model for identifying AI disclosures in Islamic banking},
+  author  = {Zafar, Muhammad Bilal},
+  journal = {Discover Analytics},
+  volume  = {4},
+  pages   = {12},
+  year    = {2026},
+  doi     = {10.1007/s44257-026-00061-w},
+  publisher = {Springer}
+}
+```
+
+Zafar, M. B. (2026). A domain specific BERT model for identifying AI disclosures in Islamic banking. Discover Analytics, 4, 12. https://doi.org/10.1007/s44257-026-00061-w
+
